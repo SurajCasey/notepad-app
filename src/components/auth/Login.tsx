@@ -76,18 +76,18 @@ const Login = () => {
               </label>
              <button 
               onClick={()=>navigate('/forgot-password')}
-              className='underline text-preset-6'>
+              className='underline text-preset-6 cursor-pointer'>
                 Forgot
              </button>
 
             </div>
              {/* wrapper for password */}
-            <div  className='border border-neutral-300 py-3 px-4 rounded-lg flex justify-between gap-2' >
+             <div  className='border border-neutral-300 py-3 px-4 rounded-lg flex justify-between gap-2 focus-within:ring' >
               <input 
                 id='password'
                 autoComplete='current-password'
                 type={showPassword ? "text" : "password"} name="password" 
-                className='w-full'
+                className='w-full outline-none focus:outline-none'
               />
               <button
                 type='button'
